@@ -1,0 +1,48 @@
+# Autodetect text files
+* text=auto
+
+# Explicitly identify text files
+*.txt text
+*.md text
+*.js text
+
+# Explicitly handle executable scripts to work with GitHub Desktop and WSL on Windows
+*.sh text eol=lf
+*.ps1 text
+*.bat text
+*.cmd text
+**/bin/* text eol=lf
+**/bin/*.ps1 -eol
+**/bin/*.bat -eol
+**/bin/*.cmd -eol
+**/scripts/* text eol=lf
+**/scripts/*.ps1 -eol
+**/scripts/*.bat -eol
+**/scripts/*.cmd -eol
+
+# Explicitly identify data files that need consistent eol=LF due to script processing
+*.dat text eol=lf
+*.csv text eol=lf
+
+# Explicitly identify template files that need consistent eol=LF due to S3 sync from multiple platforms
+*.yaml text eol=lf
+*.json text eol=lf
+
+# Explicitly identify binary files
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+*.vsd binary
+*.vsdx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.zip binary
+*.tgz binary
+*.gz binary
+
+

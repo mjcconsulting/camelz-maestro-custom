@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "comments": "Parameters for the network/simple-network template, custom but shared by all CaMeLz environments.",
+    "author": "Michael Crawford <michael.crawford@neudesic.com>"
+  },
+  "parameters": {
+    "companyName": {
+      "value": "CaMeLz"
+    },
+    "environmentName": {
+      "value": "Production"
+    },
+    "applicationName": {
+      "value": "SFTP"
+    },
+    "componentName": {
+      "value": "Network"
+    },
+    "vnetName": {
+      "value": "Production-SFTP-VNet"
+    },
+    "vnetAddressPrefix": {
+      "value": "172.16.0.0/16"
+    },
+    "subnet0Prefix": {
+      "value": "172.16.0.0/24"
+    },
+    "subnet0Name": {
+      "value": "WebSubnet"
+    },
+    "subnet1Prefix": {
+      "value": "172.16.1.0/24"
+    },
+    "subnet1Name": {
+      "value": "ApplicationSubnet"
+    },
+    "subnet2Prefix": {
+      "value": "172.16.2.0/24"
+    },
+    "subnet2Name": {
+      "value": "DatabaseSubnet"
+    },
+    "subnet3Prefix": {
+      "value": "172.16.255.0/24"
+    },
+    "subnet3Name": {
+      "value": "EndpointSubnet"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "comments": "Parameters for the network/simple-network template, custom but specific to the CaMeLz Sandbox environment.",
+    "author": "Michael Crawford <michael.crawford@neudesic.com>"
+  },
+  "parameters": {
+    "environmentName": {
+      "value": "Sandbox"
+    },
+    "vnetName": {
+      "value": "Sandbox-SFTP-VNet"
+    },
+    "vnetAddressPrefix": {
+      "value": "172.22.0.0/16"
+    },
+    "subnet0Prefix": {
+      "value": "172.22.0.0/24"
+    },
+    "subnet1Prefix": {
+      "value": "172.22.1.0/24"
+    },
+    "subnet2Prefix": {
+      "value": "172.22.2.0/24"
+    },
+    "subnet3Prefix": {
+      "value": "172.22.255.0/24"
+    }
+  }
+}
