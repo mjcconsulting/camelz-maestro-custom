@@ -1,13 +1,8 @@
 targetScope = 'resourceGroup'
 
 @description('Company Name')
-@allowed([
-  'Neudesic'
-  'IBM'
-  'TennCare'
-  'MJCConsulting'
-  'CaMeLz'
-])
+@minLength(3)
+@maxLength(11)
 param companyName string = 'TennCare'
 
 @description('Location (Region) Name')
@@ -23,6 +18,7 @@ param locationName string = any(resourceGroup().location) // Currently must use 
 @description('Environment Name')
 @allowed([
   'Production'
+  'Recovery'
   'NonProduction'
   'Core'
   'Staging'

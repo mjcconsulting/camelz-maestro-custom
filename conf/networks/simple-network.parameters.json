@@ -19,21 +19,34 @@
       "value": "Network"
     },
     "vnetName": {
-      "value": "SFTP-VNet"
+      "value": "Production-SFTP-VNet"
     },
     "vnetAddressPrefix": {
-      "value": "10.0.0.0/16"
+      "value": "172.16.0.0/16"
+    },
+    "subnet0Prefix": {
+      "value": "172.16.0.0/24"
+    },
+    "subnet0Name": {
+      "value": "WebSubnet"
     },
     "subnet1Prefix": {
-      "value": "10.0.0.0/24"
+      "value": "172.16.1.0/24"
     },
     "subnet1Name": {
-      "value": "Subnet1"
+      "value": "ApplicationSubnet"
     },
     "subnet2Prefix": {
-      "value": "10.0.1.0/24"
+      "value": "172.16.2.0/24"
     },
     "subnet2Name": {
-      "value": "Subnet2"
+      "value": "DatabaseSubnet"
+    },
+    "subnet3Prefix": {
+      "value": "172.16.255.0/24"
+    },
+    "subnet3Name": {
+      "value": "EndpointSubnet"
+    }
   }
 }

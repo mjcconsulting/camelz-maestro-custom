@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "comments": "Parameters for the network/simple-network template, custom but specific to the CaMeLz Development environment.",
+    "author": "Michael Crawford <michael.crawford@neudesic.com>"
+  },
+  "parameters": {
+    "environmentName": {
+      "value": "Development"
+    },
+    "vnetName": {
+      "value": "Development-SFTP-VNet"
+    },
+    "vnetAddressPrefix": {
+      "value": "172.21.0.0/16"
+    },
+    "subnet0Prefix": {
+      "value": "172.21.0.0/24"
+    },
+    "subnet1Prefix": {
+      "value": "172.21.1.0/24"
+    },
+    "subnet2Prefix": {
+      "value": "172.21.2.0/24"
+    },
+    "subnet3Prefix": {
+      "value": "172.21.255.0/24"
+    }
+  }
+}
