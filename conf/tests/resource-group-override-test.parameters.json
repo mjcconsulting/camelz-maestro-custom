@@ -14,6 +14,9 @@
     },
     "parameterSource": {
       "value": "CustomParametersFile"
+    },
+    "parameterSourceCaMeLz": {
+      "value": "CustomParametersFile"
     }
   }
 }

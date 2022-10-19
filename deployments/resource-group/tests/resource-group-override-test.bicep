@@ -57,9 +57,21 @@ param componentName string = 'Network'
 ])
 param parameterSource string = 'Template'
 
+@description('Parameter Source Unique to CaMeLz')
+@allowed([
+  'Template'
+  'ParametersFile'
+  'EnvParametersFile'
+  'CustomParametersFile'
+  'CustomEnvParametersFile'
+  'CommandLine'
+])
+param parameterSourceCaMeLz string = 'Template'
+
 output companyNameOutput string = companyName
 output locationNameOutput string = locationName
 output environmentNameOutput string = environmentName
 output applicationNameOutput string = applicationName
 output componentNameOutput string = componentName
 output parameterSourceOutput string = parameterSource
+output parameterSourceCaMeLzOutput string = parameterSourceCaMeLz
