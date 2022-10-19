@@ -1,0 +1,16 @@
+TenantId,SubscriptionId,SubscriptionDisplayName,CompanyName,EnvironmentName
+20f7cd06-8622-4d22-8e1e-de260836d92e,66cc9245-2669-49ff-aefd-2ef315c0ff1e,tenncare-production,TennCare,Production
+20f7cd06-8622-4d22-8e1e-de260836d92e,c721f3d1-5ccb-4fd5-ab19-d89fd9952bbf,tenncare-non-prod,TennCare,NonProduction
+20f7cd06-8622-4d22-8e1e-de260836d92e,61a64ff8-fc5a-4cc9-8919-c1a13ea34c37,tenncare-uat,TennCare,UAT
+20f7cd06-8622-4d22-8e1e-de260836d92e,b121a0d6-13cb-49d1-873a-36684cd8195f,tenncare-qa-01,TennCare,QA
+20f7cd06-8622-4d22-8e1e-de260836d92e,ef3fb469-c754-4670-9415-1bcf53bd9f5a,tenncare-development-01,TennCare,Development
+20f7cd06-8622-4d22-8e1e-de260836d92e,a19b5453-9fd1-4b78-b78c-7d3bf3f63434,tenncare-sandbox,TennCare,Sandbox
+20f7cd06-8622-4d22-8e1e-de260836d92e,beefb1eb-71b0-4de2-bf80-9ebc56291ace,tenncare-training,TennCare,Training
+687f51c3-0c5d-4905-84f8-97c683a5b9d1,9562d775-da30-489a-baf9-2c2507671fc9,Neudesic-MCrawford-Production,Neudesic,Production
+687f51c3-0c5d-4905-84f8-97c683a5b9d1,43969857-506b-402d-9406-9b7fd179b5c2,Neudesic-MCrawford-Sandbox,Neudesic,Sandbox
+687f51c3-0c5d-4905-84f8-97c683a5b9d1,d59b1f4a-782e-443a-a2da-7b10fc02096e,Visual Studio Professional Subscription,Neudesic,Education
+21d9595c-abe2-434b-b6cd-ae267a56b875,c7217e11-104a-4694-83c4-9a5f8f1a8d0c,MJCConsulting-MCrawford-Sandbox,MJCConsulting,Sandbox
+1e43c442-4d21-45f9-955b-8a70b113c3a5,9781ee8d-5c08-4809-8b45-132846f35498,CaMeLz-Production,CaMeLz,Production
+1e43c442-4d21-45f9-955b-8a70b113c3a5,71c60038-a6b1-401c-a110-cd85ae8e7b3d,CaMeLz-Core,CaMeLz,Core
+1e43c442-4d21-45f9-955b-8a70b113c3a5,f12da280-8266-4e00-8b64-c856e41b82b8,CaMeLz-Staging,CaMeLz,Staging
+1e43c442-4d21-45f9-955b-8a70b113c3a5,d4f69ab9-ff5a-403a-9e9f-95a6834dc3ef,CaMeLz-MCrawford-Sandbox,CaMeLz,Sandbox

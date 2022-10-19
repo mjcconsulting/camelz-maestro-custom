@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "comments": "Parameters for the tests/resource-group-override-test template, custom but specific to the CaMeLz Sandbox environment.",
+    "author": "Michael Crawford <michael.crawford@neudesic.com>"
+  },
+  "parameters": {
+    "environmentName": {
+      "value": "Sandbox"
+    },
+    "parameterSource": {
+      "value": "CustomEnvParametersFile"
+    }
+  }
+}
