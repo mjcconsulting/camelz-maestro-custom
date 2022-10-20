@@ -25,6 +25,9 @@
       "value": "172.21.2.0/24"
     },
     "subnet3Prefix": {
+      "value": "172.21.3.0/24"
+    },
+    "subnet4Prefix": {
       "value": "172.21.255.0/24"
     }
   }

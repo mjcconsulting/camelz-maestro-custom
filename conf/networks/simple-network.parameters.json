@@ -43,9 +43,15 @@
       "value": "DatabaseSubnet"
     },
     "subnet3Prefix": {
-      "value": "172.16.255.0/24"
+      "value": "172.16.3.0/24"
     },
     "subnet3Name": {
+      "value": "GatewaySubnet"
+    },
+    "subnet4Prefix": {
+      "value": "172.16.255.0/24"
+    },
+    "subnet4Name": {
       "value": "EndpointSubnet"
     }
   }
