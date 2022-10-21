@@ -1,0 +1,13 @@
+EnvironmentName,EnvironmentCode,Comment
+Management,l,Reserved
+Log,l,Reserved
+Audit,a,Reserved
+Core,c,
+Network,n,Reserved
+Production,p,
+Recovery,r,
+Staging,s,
+Testing,t,
+Development,d,
+Build,b,
+Sandbox,x,
