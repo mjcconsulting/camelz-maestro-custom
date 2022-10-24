@@ -17,6 +17,24 @@
     },
     "parameterSourceCaMeLz": {
       "value": "CustomParametersFile"
+    },
+    "networkSecurityGroupsSettings": {
+      "value": {
+        "securityRules": [
+          {
+            "name": "RDPAllow",
+            "description": "allow RDP connections",
+            "direction": "Inbound",
+            "priority": 100,
+            "sourceAddressPrefix": "*",
+            "destinationAddressPrefix": "172.16.0.0/24",
+            "sourcePortRange": "*",
+            "destinationPortRange": "3389",
+            "access": "Allow",
+            "protocol": "Tcp"
+          }
+        ]
+      }
     }
   }
 }

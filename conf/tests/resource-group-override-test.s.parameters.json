@@ -2,21 +2,18 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "metadata": {
-    "comments": "Parameters for the tests/resource-group-override-test template, custom but specific to the CaMeLz Sandbox environment.",
+    "comments": "Parameters for the tests/resource-group-override-test template, custom but specific to the CaMeLz Staging environment.",
     "author": "Michael Crawford <michael.crawford@neudesic.com>"
   },
   "parameters": {
     "environmentName": {
-      "value": "Sandbox"
+      "value": "Staging"
     },
     "parameterSource": {
       "value": "CustomEnvParametersFile"
     },
     "parameterSourceCaMeLz": {
       "value": "CustomEnvParametersFile"
-    },
-    "parameterTest": {
-      "value": "RemoveMeAfterTesting"
     },
     "networkSecurityGroupsSettings": {
       "value": {
@@ -27,7 +24,7 @@
             "direction": "Inbound",
             "priority": 100,
             "sourceAddressPrefix": "184.187.189.211/32",
-            "destinationAddressPrefix": "172.22.0.0/24",
+            "destinationAddressPrefix": "172.19.0.0/24",
             "sourcePortRange": "*",
             "destinationPortRange": "3389",
             "access": "Allow",
@@ -39,9 +36,21 @@
             "direction": "Inbound",
             "priority": 200,
             "sourceAddressPrefix": "184.187.189.211/32",
-            "destinationAddressPrefix": "10.0.1.0/24",
+            "destinationAddressPrefix": "172.19.0.0/24",
             "sourcePortRange": "*",
             "destinationPortRange": "80",
+            "access": "Allow",
+            "protocol": "Tcp"
+          },
+          {
+            "name": "HTTPSAllow",
+            "description": "allow HTTPS connections",
+            "direction": "Inbound",
+            "priority": 210,
+            "sourceAddressPrefix": "184.187.189.211/32",
+            "destinationAddressPrefix": "172.19.0.0/24",
+            "sourcePortRange": "*",
+            "destinationPortRange": "443",
             "access": "Allow",
             "protocol": "Tcp"
           }
