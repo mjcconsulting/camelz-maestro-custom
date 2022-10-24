@@ -117,4 +117,4 @@ output parameterSourceCaMeLz string = parameterSourceCaMeLz
 output parameterTest string = parameterTest
 
 @description('Network Security Group Settings, an example of a complex object parameter')
-output networkSecurityGroupsSettings string = networkSecurityGroupsSettings
+output networkSecurityGroupsSettings object = networkSecurityGroupsSettings
