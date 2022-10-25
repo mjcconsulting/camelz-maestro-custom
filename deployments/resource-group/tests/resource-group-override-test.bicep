@@ -36,6 +36,7 @@ param environmentName string
 @description('Application Name')
 @allowed([
   'SFTP'
+  'Other'
 ])
 param applicationName string
 

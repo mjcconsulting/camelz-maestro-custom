@@ -12,6 +12,9 @@
     "environmentName": {
       "value": "Production"
     },
+    "applicationName": {
+      "value": "Other"
+    },
     "parameterSource": {
       "value": "CustomParametersFile"
     },
