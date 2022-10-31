@@ -1,0 +1,12 @@
+{
+  "moduleAliases": {
+    "br": {
+      "private": {
+        "registry": "ibmazsandboxprivatemoduleregistry.azurecr.io"
+      },
+      "camelzprivate": {
+        "registry": "camelzsandboxprivatemoduleregistry.azurecr.io"
+      }
+    }
+  }
+}
