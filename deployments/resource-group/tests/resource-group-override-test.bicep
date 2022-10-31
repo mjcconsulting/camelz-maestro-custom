@@ -1,51 +1,25 @@
 targetScope = 'resourceGroup'
 
+@description('Location')
+param location string = resourceGroup().location
+
 @description('Company Name')
 @minLength(3)
-@maxLength(11)
+@maxLength(20)
 param companyName string
 
-@description('Location (Region) Name')
-@allowed([
-  'eastus'
-  'eastus2'
-  'westus'
-  'westus2'
-  'centralus'
-])
-param locationName string = any(resourceGroup().location) // Currently must use the any() workaround
-
 @description('Environment Name')
-@allowed([
-  'Production'
-  'Recovery'
-  'NonProduction'
-  'Core'
-  'Staging'
-  'UAT'
-  'QA'
-  'Testing'
-  'Development'
-  'Build'
-  'Education'
-  'Training'
-  'Sandbox'
-])
+@minLength(3)
+@maxLength(20)
 param environmentName string
 
 @description('Application Name')
-@allowed([
-  'SFTP'
-  'Other'
-])
-param applicationName string
+@maxLength(20)
+param applicationName string = ''
 
 @description('Component Name')
-@allowed([
-  'Network'
-  'StorageAccount'
-])
-param componentName string = 'Network'
+@maxLength(20)
+param componentName string = ''
 
 @description('Parameter Source')
 @allowed([
@@ -93,11 +67,11 @@ param networkSecurityGroupsSettings object = {
   ]
 }
 
+@description('Location')
+output location string = location
+
 @description('Company Name')
 output companyName string = companyName
-
-@description('Location (Region) Name')
-output locationName string = locationName
 
 @description('Environment Name')
 output environmentName string = environmentName

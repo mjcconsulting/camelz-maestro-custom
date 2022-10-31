@@ -1,49 +1,24 @@
 targetScope = 'resourceGroup'
 
+@description('Location')
+param location string = resourceGroup().location
+
 @description('Company Name')
 @minLength(3)
-@maxLength(11)
-param companyName string = 'CaMeLz'
-
-@description('Location (Region) Name')
-@allowed([
-  'eastus'
-  'eastus2'
-  'westus'
-  'westus2'
-  'centralus'
-])
-param locationName string = any(resourceGroup().location) // Currently must use the any() workaround
+@maxLength(20)
+param companyName string
 
 @description('Environment Name')
-@allowed([
-  'Production'
-  'Recovery'
-  'NonProduction'
-  'Core'
-  'Staging'
-  'UAT'
-  'QA'
-  'Testing'
-  'Development'
-  'Build'
-  'Education'
-  'Training'
-  'Sandbox'
-])
-param environmentName string = 'Development'
+@minLength(3)
+@maxLength(20)
+param environmentName string
 
 @description('Application Name')
-@allowed([
-  'SFTP'
-])
-param applicationName string = 'SFTP'
+@maxLength(20)
+param applicationName string = ''
 
 @description('Component Name')
-@allowed([
-  'Network'
-  'StorageAccount'
-])
+@maxLength(20)
 param componentName string = 'Network'
 
 @description('VNet name')
@@ -84,7 +59,7 @@ param subnet4Name string = 'Subnet4'
 
 resource vnet 'Microsoft.Network/virtualNetworks@2021-08-01' = {
   name: vnetName
-  location: locationName
+  location: location
   properties: {
     addressSpace: {
       addressPrefixes: [
