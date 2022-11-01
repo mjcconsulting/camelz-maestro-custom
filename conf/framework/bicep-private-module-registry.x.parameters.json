@@ -2,15 +2,12 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "metadata": {
-    "comments": "Parameters for the network/isolated-network template, specific to the CaMeLz Development environment.",
+    "comments": "Parameters for the framework/bicep-private-module-registry, specific to the CaMeLz Sandbox environment.",
     "author": "Michael Crawford <michael.crawford@neudesic.com>"
   },
   "parameters": {
-    "environmentType": {
-      "value": "Micro"
-    },
-    "enablePublicAccess": {
-      "value": true
+    "registryType": {
+      "value": "Custom"
     }
   }
 }
