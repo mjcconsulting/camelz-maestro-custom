@@ -29,8 +29,6 @@ param deployCdn bool = true
 
 var appServicePlanName = '${appServiceAppName}-Plan'
 
-module helloWorld 'br/private:examples/hello-world:1.0' = {
-
 module app 'br/private:examples/app:0.9' = {
   name: '${applicationName}-App'
   params: {
