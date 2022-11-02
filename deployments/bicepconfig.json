@@ -1,0 +1,14 @@
+{
+  "moduleAliases": {
+    "br": {
+      "private": {
+        "registry": "camelzsandboxmoduleregistry.azurecr.io",
+        "modulePath": "bicep/modules"
+      },
+      "camelzprivate": {
+        "registry": "camelzsandboxcustommoduleregistry.azurecr.io",
+        "modulePath": "bicep/modules"
+      }
+    }
+  }
+}

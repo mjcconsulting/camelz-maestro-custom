@@ -1,0 +1,13 @@
+LocationName,LocationCode,LocationPair,Comment
+eastasia,ea,southeastasia,
+southeastasia,sea,eastasia,
+northeurope,ne,westeurope,
+westeurope,we,northeurope,
+eastus,eus,westus,non-symetric pairs
+westus,wus,eastus,
+eastus2,eus2,centralus,
+centralus,cus,eastus2,
+northcentralus,ncus,southcentralus,
+southcentralus,scus,northcentralus,
+westus2,wus2,westcentralus,
+westcentralus,wcus,westus2,

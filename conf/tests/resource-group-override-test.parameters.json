@@ -2,21 +2,36 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "metadata": {
-    "comments": "Parameters for the tests/resource-group-override-test template, custom but shared by all CaMeLz environments.",
+    "comments": "Parameters for the tests/resource-group-override-test template, shared by all CaMeLz environments.",
     "author": "Michael Crawford <michael.crawford@neudesic.com>"
   },
   "parameters": {
-    "companyName": {
-      "value": "CaMeLz"
-    },
-    "environmentName": {
-      "value": "Production"
+    "applicationName": {
+      "value": "Other"
     },
     "parameterSource": {
       "value": "CustomParametersFile"
     },
     "parameterSourceCaMeLz": {
       "value": "CustomParametersFile"
+    },
+    "networkSecurityGroupsSettings": {
+      "value": {
+        "securityRules": [
+          {
+            "name": "RDPAllow",
+            "description": "allow RDP connections",
+            "direction": "Inbound",
+            "priority": 100,
+            "sourceAddressPrefix": "*",
+            "destinationAddressPrefix": "172.16.0.0/24",
+            "sourcePortRange": "*",
+            "destinationPortRange": "3389",
+            "access": "Allow",
+            "protocol": "Tcp"
+          }
+        ]
+      }
     }
   }
 }
