@@ -9,7 +9,7 @@ param location string = resourceGroup().location
 param companyName string
 
 @description('Environment Name')
-@minLength(3)
+@minLength(1)
 @maxLength(20)
 param environmentName string
 
