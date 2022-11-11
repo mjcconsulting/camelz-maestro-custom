@@ -18,11 +18,12 @@ param environmentName string
 param applicationName string = ''
 
 @description('Component Name')
+@minLength(3)
 @maxLength(20)
-param componentName string = 'Network'
+param componentName string = 'VNet'
 
 @description('VNet name')
-param vnetName string = 'VNet1'
+param vnetName string = '${environmentName}-${applicationName != '' ? '${applicationName}-' : ''}${componentName}'
 
 @description('Address prefix')
 param vnetAddressPrefix string = '10.0.0.0/16'

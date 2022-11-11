@@ -6,9 +6,6 @@
     "author": "Michael Crawford <michael.crawford@neudesic.com>"
   },
   "parameters": {
-    "vnetName": {
-      "value": "Staging-SFTP-VNet"
-    },
     "vnetAddressPrefix": {
       "value": "172.19.0.0/16"
     },
