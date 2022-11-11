@@ -6,9 +6,6 @@
     "author": "Michael Crawford <michael.crawford@neudesic.com>"
   },
   "parameters": {
-    "vnetName": {
-      "value": "Sandbox-SFTP-VNet"
-    },
     "vnetAddressPrefix": {
       "value": "172.22.0.0/16"
     },
