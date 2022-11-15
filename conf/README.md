@@ -36,11 +36,11 @@ the deployments directory structure, not including the deployment-scope top-leve
 
 This is an index into this organization structure. This structure is initially sparse but will be increased over time.
 
-* **[budgets](./budgets/)**  
+* **[budget](./budget/)**  
   Configuration related to budgets.
-* **[networks](./networks/)**  
-  Configuration related to networking.
-* **[storage-accounts](./storage-accounts/)**  
-  Configuration related to storage accounts.
-* **[tests](./tests/)**  
+* **[network](./network/)**  
+  Configuration related to networks.
+* **[storage](./storage/)**  
+  Configuration related to storage.
+* **[test](./test/)**  
   Configuration related to tests.

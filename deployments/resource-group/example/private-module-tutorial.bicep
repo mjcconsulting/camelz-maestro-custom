@@ -29,7 +29,7 @@ param deployCdn bool = true
 
 var appServicePlanName = '${appServiceAppName}-Plan'
 
-module app 'br/private:examples/app:0.9' = {
+module app 'br/private:example/app:0.9' = {
   name: '${applicationName}-App'
   params: {
     location: location
@@ -43,7 +43,7 @@ module app 'br/private:examples/app:0.9' = {
   }
 }
 
-module cdn 'br/private:examples/cdn:0.9' = if (deployCdn) {
+module cdn 'br/private:example/cdn:0.9' = if (deployCdn) {
   name: '${applicationName}-CDN'
   params: {
     companyName: companyName
