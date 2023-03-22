@@ -59,3 +59,6 @@ module cdn 'br/private:example/cdn:0.9' = if (deployCdn) {
 
 @description('Website Host Name')
 output websiteHostName string = deployCdn ? cdn.outputs.endpointHostName : app.outputs.appServiceAppHostName
+
+@description('Custom Modification')
+output customModification string = 'This deployment was overridden within the camelz-maestro-custom repo'

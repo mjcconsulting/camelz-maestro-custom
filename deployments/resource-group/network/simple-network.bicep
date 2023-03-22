@@ -107,3 +107,6 @@ resource vnet 'Microsoft.Network/virtualNetworks@2021-08-01' = {
     Component: componentName
   }
 }
+
+@description('Custom Modification')
+output customModification string = 'This module was overridden within the camelz-maestro-custom repo'
