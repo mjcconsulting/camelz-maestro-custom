@@ -2,12 +2,12 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "metadata": {
-    "comments": "Parameters for the tests/resource-group-subnet-calculator-test template, specific to the CaMeLz Sandbox environment.",
+    "comments": "Parameters for the test/tenant-override-test template, shared by all CaMeLz environments.",
     "author": "Michael Crawford <michael.crawford@neudesic.com>"
   },
   "parameters": {
-    "addressPrefix": {
-      "value": "172.22.0.0/20"
+    "parameterSource": {
+      "value": "CustomParametersFile"
     }
   }
 }
